@@ -1,0 +1,7 @@
+---
+- name: install vim and zip
+  become: True
+  package: name={{ item }}
+  with_items:
+    - zip
+    - vim
